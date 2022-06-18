@@ -1,0 +1,19 @@
+import turtle
+
+#ventana
+wn = turtle.Screen()
+wn.title("Pong by Cesar")
+wn.bgcolor("black")
+wn.setup(width = 800, height = 600)
+wn.tracer(0)
+
+#jugador
+jugadorA = turtle.Turtle()
+jugadorA.speed(0)
+jugadorA.shape("square")
+jugadorA.color("white")
+jugadorA.penup()
+jugadorA.goto(-350,0)
+
+while True:
+    wn.update()
